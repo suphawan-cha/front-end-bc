@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+        .flex-container{
+            /*height: 100vh;*/
+            display: flex;
+            /*flex-direction: row-reverse;*/
+            
+            /*flex-wrap: wrap;  //ถ้าล้นหน้าจอขึ้นบรรทัดใหม่ 
+            flex-direction: row;*/
+            /*height: 100vh;*/
+            flex-flow: row wrap; /*มีค่าเท่ากับ flex-wrap: wrap & flex-direction: row*/
+
+            /*justify-content: center;*/ /* จัดเนื้อหาด้านใน ทิศแกนหลักของ flex (row)*/
+            /*align-items:start ;*/ /* จัดเนื้อหาด้าน ในแกน column*/
+
+            gap: 8px;
+        }
+        .flex-item{
+            background-color: blueviolet;
+            padding: 8px 32px;
+            border: 1px solid black;
+            /*min-width: 100px;*/ /* กว้างอย่างน้อยเท่าไร */
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">ทั้งหมด</div>
+        <div class="flex-item">เพลง</div>
+        <div class="flex-item">เกม</div>
+        <div class="flex-item">ข่าวสาร</div>
+        <div class="flex-item">ไลฟ์สด</div>
+        <!--<div class="flex-item">6</div>
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>-->
+        
+    </div>
+</body>
+</html>
