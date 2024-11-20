@@ -21,25 +21,71 @@
             /*justify-content: center;*/ /* จัดเนื้อหาด้านใน ทิศแกนหลักของ flex (row)*/
             /*align-items:start ;*/ /* จัดเนื้อหาด้าน ในแกน column*/
 
-            gap: 8px;
+            gap:20px;
         }
         .flex-item{
             background-color: blueviolet;
-            padding: 8px 32px;
+            padding: 20px 50px;
             border: 1px solid black;
             /*min-width: 100px;*/ /* กว้างอย่างน้อยเท่าไร */
             border-radius: 10px;
         }
+        .feature{
+            order: -1;
+        }
+
+        .flex-desc{
+            /*height: 100vh;*/
+            display: flex;
+            /*flex-direction: row-reverse;*/
+            
+            /*flex-wrap: wrap;  //ถ้าล้นหน้าจอขึ้นบรรทัดใหม่ 
+            flex-direction: row;*/
+            /*height: 100vh;*/
+            flex-flow: row wrap; /*มีค่าเท่ากับ flex-wrap: wrap & flex-direction: row*/
+
+            /*justify-content: center;*/ /* จัดเนื้อหาด้านใน ทิศแกนหลักของ flex (row)*/
+            /*align-items:start ;*/ /* จัดเนื้อหาด้าน ในแกน column*/
+
+            gap: 10px;
+        }
+        .flex-item-desc{
+            background-color: white;
+            padding: 20px 45px;
+
+        }
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
+    <div class="flex-pic">
+        <img src="pic1.jpg" width="150px" height="200px">
+        <img src="pic2.jpg" width="150px" height="200px">
+        <img src="pic3.jpg" width="150px" height="200px">
+        <img src="pic4.jpg" width="150px" height="200px">
+    </div>
+    <div class="flex-desc">
+        <div class="flex-item-desc">Product1</div>
+        <div class="flex-item-desc">Product2</div>
+        <div class="flex-item-desc">Product3</div>
+        <div class="flex-item-desc feature">Product4</div>
+    </div>
     <div class="flex-container">
         <div class="flex-item">ทั้งหมด</div>
         <div class="flex-item">เพลง</div>
         <div class="flex-item">เกม</div>
-        <div class="flex-item">ข่าวสาร</div>
-        <div class="flex-item">ไลฟ์สด</div>
-        <!--<div class="flex-item">6</div>
+        <div class="flex-item feature">Feature</div>
+        <!--<div class="flex-item">ไลฟ์สด</div>
+        <div class="flex-item">6</div>
         <div class="flex-item">1</div>
         <div class="flex-item">2</div>
         <div class="flex-item">3</div>
@@ -47,6 +93,24 @@
         <div class="flex-item">5</div>
         <div class="flex-item">6</div>-->
         
+    </div>
+
+    <div class="container">
+        <div class="product">
+            <img src="pic1.jpg" width="150px" height="200px">
+            <h2>Product1</h2>
+            <button>Buy Now1</button>
+        </div>
+        <div class="product">
+            <img src="pic2.jpg" width="150px" height="200px">
+            <h2>Product2</h2>
+            <button>Buy Now2</button>
+        </div>
+        <div class="product feature">
+            <img src="pic3.jpg" width="150px" height="200px">
+            <h2>Product3</h2>
+            <button>Buy Now3</button>
+        </div>
     </div>
 </body>
 </html>
