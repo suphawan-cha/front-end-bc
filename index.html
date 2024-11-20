@@ -1,2 +1,88 @@
-<h1>Hello</h1>
-<p>My Name is Suphawan</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Tutorial</title>
+    <style>
+        /*.container{
+            display: grid;
+            grid-template-columns: auto auto auto;*/
+            /*grid-template-rows: 100px 100px 100px;*/
+            /*column-gap: 32px;
+            row-gap: 16px;
+            background-color: black;
+            justify-content: center;
+        }
+        .item, .item-special{
+            background-color: aqua;
+            padding: 32px;
+        }
+        .item-special{/*
+            /*grid-column: 1 / span 3;
+            grid-row: 2;*/
+           /* grid-area: 1 / 2 / span 4 / span 4;
+        }*/
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 32px;
+            row-gap: 16px;
+            background-color: black;
+            grid-template-areas: 
+            "header header header"
+            "menu main right"
+            "menu footer footer";
+        }
+        .header{
+            grid-area: header;
+        }
+        .menu{
+            grid-area: menu;
+        }
+        .right{
+            grid-area: right;
+        }
+        .footer{
+            grid-area: footer;
+        }
+    </style>
+
+    <!--<link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+    <!--grid-template-columns กำหนดคอลัมน์ และความกว้าง-->
+    <!-- gap กำหนดระยะห่าง-->
+    <!--column-gap: 32px;
+    row-gap: 16px;
+    รวมเป็น gap: 16px 32px;-->
+    <!--justify-content กำหนดตำแหน่ง-->
+
+    <!--EX1--> <!--div.container>div.item*6 กด enter ไม่ต้องพิมพ์เอง-->
+    <!--<div class="container">
+        <div class="item-special">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">15</div>
+    </div>-->
+<div class="container">
+    <div class="item header">header</div>
+    <div class="item menu">menu</div>
+    <div class="item main">main</div>
+    <div class="item right">right</div>
+    <div class="item footer">footer</div>
+</div>
+
+</body>
+</html>

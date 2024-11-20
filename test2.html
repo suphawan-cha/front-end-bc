@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gride Tutoria</title>
+    <link rel="stylesheet" href="style.css">
+        <!--
+    ID = ซ้ำหันไม่ได้ ใช้ tag #
+    class = ซ้ำกันได้ ใช้ tag .
+    -->
+<style>
+    .container{
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(12, 1fr);
+        background-color: aqua;
+    }
+
+ 
+
+</style>
+</head>
+<body>
+ <div class="container">
+    <div class="item Header">
+        <div>
+            <p>Logo</p>
+        </div>
+        <div>
+            <input type="text">
+
+        </div>
+        <div>
+            <p>profile</p>
+        </div>
+    </div>
+    <div class="item Menu">Menu</div>
+    <div class="item Main">Main</div>
+    <div class="item Rigth">Rigth</div>
+    <div class="item Footer">Footer</div>
+    <div class="item Menu">Menu</div>
+    <div class="item Menu">Menu</div>
+    <div class="item Menu">Menu</div>
+    <!--
+    <div class="item-Special">1</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+    <div class="item">11</div>
+    <div class="item">12</div>
+    <div class="item">13</div>
+    <div class="item">14</div>
+    <div class="item">15</div>-->
+ </div>
+ 
+</body>
+</html>
